@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SafetyFirst</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="service_not_available">service_not_available</string>
+    <string name="invalid_lat_long_used">invalid_lat_long_used</string>
+    <string name="no_address_found">no_address_found</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>

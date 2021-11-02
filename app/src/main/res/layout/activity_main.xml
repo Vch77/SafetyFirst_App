@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConnections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MANAGE CONNECTIONS"
+        android:backgroundTint="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:hapticFeedbackEnabled="true"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnConnections"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp"
+            android:hapticFeedbackEnabled="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                android:padding="5dp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp"
+            android:hapticFeedbackEnabled="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_logout"
+                android:padding="5dp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="18dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPauseTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="15dp"
+            android:text="PAUSE TRACKING"
+            android:backgroundTint="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:hapticFeedbackEnabled="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStopTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="15dp"
+            android:text="STOP TRACKING"
+            android:backgroundTint="@color/colorRed"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:hapticFeedbackEnabled="true"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="12dp"
+            android:text="START TRACKING"
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:hapticFeedbackEnabled="true"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

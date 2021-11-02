@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/countDownText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01 : 00"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:clickable="false"
+        android:max="100"
+        android:progressDrawable="@drawable/alert_seekbar"
+        android:secondaryProgress="0"
+        android:shape="oval"
+        android:splitTrack="false"
+        android:thumb="@drawable/seekbar_thumb" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSendAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="15dp"
+        android:text="Send Alerts Now"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="40dp"
+        app:backgroundTint="@color/colorRed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMarkSafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="15dp"
+        android:text="Mark Safe"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="40dp"
+        android:backgroundTint="#00BE04"/>
+
+</LinearLayout>

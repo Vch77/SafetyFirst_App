@@ -1,0 +1,2 @@
+rootProject.name = "SafetyFirst App"
+include ':app'

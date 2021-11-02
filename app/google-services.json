@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "527835757451",
+    "firebase_url": "https://safetyfirst-app-b1dcd-default-rtdb.firebaseio.com",
+    "project_id": "safetyfirst-app-b1dcd",
+    "storage_bucket": "safetyfirst-app-b1dcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527835757451:android:f5cd2f1e0843894cae0d8e",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.aad.W9491015"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527835757451-e3dh1llm6mgd82d0f3taa8f2u2cqabmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uk.ac.tees.aad.W9491015",
+            "certificate_hash": "143f431444881da7fba78e55395dbfcd7ee4b6e2"
+          }
+        },
+        {
+          "client_id": "527835757451-c86bgdp91irstdfsui0ub1i7dgm88lb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5srY45KJSOkqK7pUYZ0GR-yB-c_TPjf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527835757451-c86bgdp91irstdfsui0ub1i7dgm88lb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
